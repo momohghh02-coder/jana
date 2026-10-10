@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الي توام روحي  ❤️ | 10.10</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Cairo', sans-serif;
+  color: white;
+  background:
+    radial-gradient(ellipse at top, #652044 0%, transparent 60%),
+    linear-gradient(145deg, #140914, #301025, #110a19);
+  overflow-x: hidden;
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: -40px;
+  color: #ff6b9c;
+  animation: floatUp linear infinite;
+  opacity: .65;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-115vh) rotate(360deg); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 650px);
+  margin: auto;
+  padding: 55px 0;
+  text-align: center;
+}
+
+.date {
+  display: inline-block;
+  padding: 7px 22px;
+  border: 1px solid #ff9cbb66;
+  border-radius: 30px;
+  color: #ffc0d5;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: clamp(40px, 10vw, 68px);
+  margin: 25px 0 8px;
+  color: #ffb3ce;
+  text-shadow: 0 0 30px #ff367866;
+}
+
+.subtitle {
+  color: #e8c7d7;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.heart-big {
+  font-size: 68px;
+  margin: 20px 0;
+  animation: beat 1.4s infinite;
+  filter: drop-shadow(0 0 20px #ff4179);
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.13); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+}
+
+.card {
+  margin-top: 28px;
+  padding: 25px 22px;
+  background: #ffffff0b;
+  border: 1px solid #ffffff20;
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 50px #0003;
+}
+
+button {
+  border: none;
+  border-radius: 40px;
+  padding: 15px 28px;
+  margin: 12px 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  color: #48132b;
+  background: linear-gradient(135deg, #ffd0df, #ff79a8);
+  box-shadow: 0 5px 25px #ff4e8c33;
+  transition: transform .2s;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+#letter {
+  display: none;
+  text-align: right;
+  margin-top: 25px;
+  line-height: 2.25;
+  font-size: 16px;
+  color: #fff0f5;
+  white-space: pre-line;
+  animation: appear .9s ease;
+}
+
+#letter h2 {
+  text-align: center;
+  color: #ffb4cf;
+  line-height: 1.8;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quote {
+  color: #ffb5cf;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+footer {
+  margin-top: 35px;
+  color: #c7a5b8;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none !important;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<main class="container">
+  <div class="date">10 · 10 · 2026</div>
+
+  <h1>إلى جني ❤️</h1>
+
+  <div class="subtitle">
+    في يوم مميز، لشخص مميز أوي عندي...<br>
+    في كلام كتير جوايا، ودي محاولة إني أوصلهولك.
+  </div>
+
+  <div class="heart-big">❤️</div>
+
+  <section class="card">
+    <div id="intro">
+      <h2 style="color:#ffc0d5">عندي ليكي رسالة 🥹</h2>
+      <p style="color:#e8c7d7;line-height:2">
+        رسالة فيها شوية من اللي في قلبي،<br>
+        وشوق مش عارف أوصفه، ودعوة بتمنى تتحقق.
+      </p>
+      <button onclick="openLetter()">افتحي رسالتك يا جني 💌</button>
+    </div>
+
+    <article id="letter">
+      <h2>يا أجمل صدفة في حياتي ❤️</h2>
+
+      بمناسبة يوم 10/10، حبيت أكتبلك كلام من قلبي،
+      كلام يمكن ميقدرش يوصف كل اللي جوايا، بس نفسي
+      يخليكي تعرفي قد إيه إنتي غالية عندي وقد إيه
+      وجودك بيفرق معايا.
+
+      يا جني، أنا مش عارف أبدأ منين، بس عارف إنك
+      بقيتي شخص مميز أوي في حياتي. بقيت أفرح بكلامك،
+      وأبتسم لما أشوف رسالة منك، وألاقي نفسي بفكر
+      فيكي وسط يومي من غير ما أقصد. بقيتي من الناس
+      اللي ليهم مكانة خاصة في قلبي، واللي تفاصيلهم
+      الصغيرة بتفرق معاهم.
+
+      **أنا بحبك يا جني، وبحب كل إحساس حلو بحسه
+      وأنا بتكلم معاكي.** ❤️
+
+      بحب طريقتك، وضحكتك، وكلامك، وبحب إن في شخص
+      زيك بقيت أتمنى له الخير من كل قلبي. نفسي أشوفك
+      دايمًا مبسوطة، وناجحة، ومحققة كل حاجة بتحلمي
+      بيها. نفسي أكون شخص يشجعك على أحلامك، ويفرح
+      لنجاحك، ويتمنالك الخير حتى في أبسط تفاصيل يومك.
+
+      وعارفة إيه كمان؟ إنتي بتوحشيني أوي.
+      وحشني كلامنا، وحشني إحساسي وأنا بتكلم معاكي،
+      ووحشني إني أعرف أخبارك وأطمن عليكي.
+      ساعات ببقى نفسي أحكيلك عن يومي كله،
+      عن الحاجات اللي فرحتني واللي ضايقتني،
+      لمجرد إنك إنتي الشخص اللي نفسي أشاركه تفاصيل
+      كتير من حياتي.
+
+      يمكن ساعات معرفش أعبّر كويس، ويمكن كلامي
+      ميكونش كفاية، بس ده مش معناه إن اللي جوايا
+      قليل. في مشاعر أكبر من الكلام، وفي شوق مهما
+      حاولت أوصفه مش هعرف أوصله زي ما أنا حاسس بيه.
+      ❤️‍🩹
+
+      يا جني، أنا مش بتمنى إنك تكوني مجرد حكاية
+      حلوة وعدت في حياتي. لو ربنا كاتب لنا الخير،
+      نفسي نكبر وننضج ونحقق أحلامنا، وكل واحد فينا
+      يشجع التاني إنه يبقى أحسن.
+
+      نفسي ييجي يوم نبص فيه لورا ونفتكر الأيام
+      دي ونبتسم، ونقول الحمد لله إن ربنا اختارلنا
+      الخير، وإن كل دعوة حلوة دعيناها من قلبنا
+      ربنا رزقنا بيها في الوقت المناسب.
+
+      أنا مش عايز أستعجل الأيام ولا أسبق النصيب،
+      لأن كل حاجة حلوة ليها وقتها. كل اللي بتمناه
+      إننا نحافظ على مشاعرنا، ونقرب من ربنا،
+      ونمشي في الطريق اللي يرضيه، ونسيب لربنا
+      اختيار الوقت والطريقة الأحسن لينا.
+
+      **يا رب يا جني، يجعلنا من نصيب بعض بالحلال،
+      لو إحنا خير لبعض.** 🤲🏻🤍
+
+      يا رب يجمعنا في يوم من الأيام على خير،
+      ويجعل بينا مودة ورحمة، ويبارك لنا في مستقبلنا،
+      ويرزقنا راحة البال، ويبعد عننا كل حاجة
+      ممكن تضرنا. يا رب نكون سبب في الخير لبعض،
+      ونشجع بعض على النجاح، ونفرح لبعض من قلبنا.
+
+      بدعي إن ربنا يحققلك كل حلم نفسك فيه،
+      ويعوض قلبك عن كل يوم صعب، ويكتبلك أيام
+      أجمل من اللي بتتمنيها. ومهما كان مستقبلنا
+      إيه، نفسي دايمًا تكوني بخير وسعيدة،
+      وربنا يرزقك راحة وفرحة من عنده.
+
+      وبمناسبة 10/10، حبيت أقولك إنك غالية عندي،
+      وإنك بتوحشيني، وإن وجودك بالنسبالي مش عادي.
+      حبيت أقولك إن في حد بيتمنالك الخير من قلبه،
+      وبيفرح لفرحتك، وبيتمنى يشوفك ناجحة ومبسوطة.
+
+      يمكن التاريخ ده يوم عادي عند ناس كتير،
+      لكنه بالنسبالي فرصة أقولك فيها كلام كان
+      نفسي أقولهولك، وأفكرك إنك شخص ليه مكانة
+      مميزة في قلبي. ❤️
+
+      يا رب لو لينا نصيب مع بعض، يجمعنا في الوقت
+      الصح، بالطريقة الصح، ومن غير ما نغضبه.
+      ويا رب يكتب لنا الخير سواء كنا عارفين الخير
+      ده فين أو لسه مش شايفينه.
+
+      وفي النهاية يا جني، مهما كتبت مش هقدر
+      أوصفلك كل اللي جوايا، بس هقولك حاجة واحدة:
+
+      **بحبك، وبتوحشيني، وبتمنى من قلبي إن ربنا
+      يكتب لنا الخير ويجعلنا من نصيب بعض بالحلال.** ❤️‍🩹
+
+      كل سنة وإنتي أقرب لأحلامك، وكل سنة وقلبك
+      مليان راحة وفرحة، ويا رب الجاي يكون أجمل
+      لينا مما بنتمنى.
+
+      10/10 — رسالة ليكي إنتي بالذات. 💌
+
+      <div class="quote">
+        "يا رب إن كان لنا نصيب معًا،<br>
+        فاجمع بيننا في الحلال،<br>
+        واجعل القادم أجمل مما تمنينا." 🤍
+      </div>
+    </article>
+
+    <button id="again" class="hidden" onclick="showAgain()">
+      اقري الرسالة من الأول ❤️
+    </button>
+  </section>
+
+  <footer>
+    اتكتبت بكل الحب ❤️<br>
+    10.10.2026
+  </footer>
+</main>
+
+<script>
+function openLetter() {
+  document.getElementById('intro').classList.add('hidden');
+  document.getElementById('letter').style.display = 'block';
+  document.getElementById('again').classList.remove('hidden');
+}
+
+function showAgain() {
+  const letter = document.getElementById('letter');
+  letter.style.display = 'none';
+  void letter.offsetWidth;
+  letter.style.display = 'block';
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+const hearts = document.getElementById('hearts');
+
+for (let i = 0; i < 22; i++) {
+  const heart = document.createElement('span');
+  heart.className = 'heart';
+  heart.textContent = ['♥', '♡', '❤'][i % 3];
+  heart.style.left = Math.random() * 100 + '%';
+  heart.style.fontSize = (14 + Math.random() * 22) + 'px';
+  heart.style.animationDuration = (8 + Math.random() * 12) + 's';
+  heart.style.animationDelay = (-Math.random() * 15) + 's';
+  hearts.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
